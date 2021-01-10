@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: test-topic-publisher
+  name: test-topic-publisher-ms
   labels:
-    app: test-topic-publisher
+    app: test-topic-publisher-ms
 spec:
   containers:
   - name: test-topic-publisher

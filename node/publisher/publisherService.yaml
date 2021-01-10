@@ -5,9 +5,9 @@ metadata:
     name: testkafkapublisherservice
   name: testkafkapublisherservice
 spec:
-  selector:
-    app: test-topic-publisher
-  type: NodePort
   ports:
   - port: 8097
     targetPort: 8096
+  selector:
+    app: test-topic-publisher-ms
+  type: NodePort
