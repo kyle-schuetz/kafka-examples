@@ -1,0 +1,22 @@
+{
+    "name": "kafka-producer-example",
+    "version": "0.0.1",
+    "description": "Node.js API that accepts POST messages and publishes events to Kafka topic",
+    "main": "publisher.js",
+    "scripts": {
+        "start": "node publisher.js"
+    },
+    "keywords": [
+        "kafka",
+        "node",
+        "js",
+        "produce"
+    ],
+    "author": "Kyle Schuetz",
+    "dependencies": {
+        "kafka-node": "5.0.0",
+        "body-parser": "1.19.0",
+        "express": "4.17.1",
+        "request": "2.88.2"
+    }
+}

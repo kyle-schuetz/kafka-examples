@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: test-topic-publisher
+  labels:
+    app: test-topic-publisher
+spec:
+  containers:
+  - name: test-topic-publisher
+    image: osuksdev/kafka-producer-example-node
+    imagePullPolicy: IfNotPresent
+    env:
+      - name: GIT_URL
+        value: ""
+      - name: APP_PORT
+        value: "8096"
+      - name: APP_HOME
+        value: "4-kafka"
+ports:
+  - containerPort: <Port>
